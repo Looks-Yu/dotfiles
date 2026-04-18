@@ -152,3 +152,7 @@ function repros() {
 function dir() {
   mkdir -p $1 && cd $1
 }
+
+# My Proxy
+alias proxy="export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897"
+alias unproxy="unset https_proxy http_proxy all_proxy"
